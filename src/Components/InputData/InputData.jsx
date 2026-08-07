@@ -16,7 +16,7 @@ function InputData({ setTranArray, currentVal, setCurrentVal, setCurrentInVal, s
 
         if(tranType === "expense"){
             setCurrentVal(p => p - Number(elements.ammount.value))
-            setCurrentExVal(p => p - Number(elements.ammount.value))
+            setCurrentExVal(p => p + Number(elements.ammount.value))
         }
         if(tranType === "income"){
             setCurrentVal(p => p + Number(elements.ammount.value))
